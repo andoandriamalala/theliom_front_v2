@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.grid .grid-item {
+  float: left;
+  width: 50%;
+}
+
+.grid .grid-item .img-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 3/4;
+}
+
+.grid .grid-item .img-container img {
+  height: 100%;
+  min-width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.grid .grid-item:hover .img-container img {
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
+}
+
+.grid .row {
+  padding: 2rem;
+}
+
+.title,
+.secondary_title {
+  font-family: "DM Serif Display", serif;
+}
+
+.title span,
+.secondary_title span {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+h1.title {
+  font-size: 5rem;
+}
+
+h2.title {
+  font-size: 4rem;
+}
+
+h4 {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.secondary_title {
+  font-size: 2.5rem;
+}
+
+.txt_container {
+  padding: 1.5rem;
+  background: #e7dbe1;
+}
+
+.txt_container.dark {
+  background: #775b6a;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
