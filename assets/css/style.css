@@ -4,9 +4,35 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+header {
+  background-image: url(../img/abstract.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header .row {
+  min-height: 100vh;
+}
+
+.btn {
+  border-radius: 0;
+  font-family: "DM Serif Display", serif;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+}
+
 .grid .grid-item {
   float: left;
   width: 50%;
+  padding: 0 3rem;
+}
+
+@media screen and (max-width: 992px) {
+  .grid .grid-item {
+    padding: 0;
+  }
 }
 
 .grid .grid-item .img-container {
@@ -77,5 +103,24 @@ h4 {
 .txt_container.dark {
   background: #775b6a;
   color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+  p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  h1.title {
+    font-size: 4rem;
+  }
+  h2.title {
+    font-size: 3rem;
+  }
+  .secondary_title {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
