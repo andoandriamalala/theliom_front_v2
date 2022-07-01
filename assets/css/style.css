@@ -19,8 +19,8 @@ header .row {
 .btn {
   border-radius: 0;
   font-family: "DM Serif Display", serif;
-  font-size: 2rem;
-  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  padding: .5rem 2rem;
 }
 
 .grid .grid-item {
@@ -97,12 +97,23 @@ h4 {
 
 .txt_container {
   padding: 1.5rem;
-  background: #e7dbe1;
+  background: #ececec;
 }
 
 .txt_container.dark {
   background: #775b6a;
   color: #fff;
+}
+
+nav.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+.container.add10 {
+  max-width: calc(1320px + 10rem);
 }
 
 @media screen and (max-width: 992px) {
