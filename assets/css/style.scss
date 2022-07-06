@@ -257,4 +257,13 @@ nav.navbar {
 
 .swiper-wrapper.techno_wrapper {
 	align-items: center;
+    .swiper-slide {
+        filter: grayscale(1);
+        opacity: .4;
+        transition: all .3s ease-in-out;
+        &:hover {
+            filter: grayscale(0);
+            opacity: 1;
+        }
+    }
 }
