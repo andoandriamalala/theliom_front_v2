@@ -111,6 +111,10 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.light_bckgrnd {
+  background: #f8f9fa;
+}
+
 header {
   background-image: url(../img/abstract.jpg);
   background-repeat: no-repeat;
@@ -161,7 +165,7 @@ header::after {
   position: relative;
   overflow: hidden;
   width: 100%;
-  aspect-ratio: 3/4;
+  aspect-ratio: 5/6;
 }
 
 .grid .grid-item .img-container img {
@@ -185,6 +189,30 @@ header::after {
   padding: 2rem;
 }
 
+.testimonials .bloc .img-author {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.testimonials .bloc .img-author img {
+  height: 100%;
+  min-width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.testimonials .bloc:hover .img-author img {
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
+}
+
 .title,
 .secondary_title {
   font-family: "DM Serif Display", serif;
@@ -196,17 +224,17 @@ header::after {
 }
 
 p {
-  font-size: 2rem;
-  line-height: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 h1.title {
-  font-size: 7.5rem;
-  line-height: 7.5rem;
+  font-size: 5rem;
+  line-height: 5rem;
 }
 
 h2.title {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 h4 {
@@ -226,6 +254,25 @@ h4 {
 .txt_container.dark {
   background: #775b6a;
   color: #fff;
+}
+
+h5.author {
+  font-size: 1.5rem;
+  position: relative;
+  width: 100%;
+  padding-left: 35px;
+}
+
+h5.author::before {
+  content: '';
+  height: 4px;
+  width: 30px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #fff;
 }
 
 nav.navbar {

@@ -1,5 +1,9 @@
 // @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 // @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+$light: #f8f9fa;
+$white: #fff;
+
 /* DM */
 /* latin-ext */
 @font-face {
@@ -112,6 +116,10 @@ body {
     font-family: $light_font;
 }
 
+.light_bckgrnd {
+    background: $light;
+}
+
 header {
     background-image: url(../img/abstract.jpg);
     background-repeat: no-repeat;
@@ -155,7 +163,7 @@ header {
             position: relative;
             overflow: hidden;
             width: 100%;
-            aspect-ratio: 3/4;
+            aspect-ratio: 5/6;
             img {
                 height: 100%;
                 min-width: 100%;
@@ -179,6 +187,35 @@ header {
     }
 }
 
+.testimonials {
+    .bloc {
+        .img-author {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        aspect-ratio: 1/1;
+            img {
+                height: 100%;
+                min-width: 100%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%) scale(1);
+                transition: all 0.4s ease-in-out;
+            }
+        }
+        &:hover {
+            .img-author {
+                img {
+                    transform: translate(-50%, -50%) scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+
+
 .title,
 .secondary_title {
     font-family: $font_title;
@@ -188,17 +225,17 @@ header {
 }
 
 p {
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 h1.title {
-    font-size: 7.5rem;
-    line-height: 7.5rem;
+    font-size: 5rem;
+    line-height: 5rem;
 }
 
 h2.title {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 h4 {
@@ -216,6 +253,23 @@ h4 {
     &.dark {
         background: #775b6a;
         color: #fff;
+    }
+}
+
+h5.author {
+    font-size: 1.5rem;
+    position: relative;
+    width: 100%;
+    padding-left: 35px;
+    &::before {
+        content: '';
+        height: 4px;
+        width: 30px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $white;
     }
 }
 
