@@ -265,7 +265,7 @@ h5.author {
 
 h5.author::before {
   content: '';
-  height: 4px;
+  height: 2px;
   width: 30px;
   position: absolute;
   left: 0;
