@@ -228,17 +228,17 @@ header::after {
 }
 
 p, li {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 2rem;
 }
 
 h1.title {
-  font-size: 5rem;
-  line-height: 5rem;
+  font-size: 3rem;
+  line-height: 3rem;
 }
 
 h2.title {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 h4 {
@@ -247,7 +247,7 @@ h4 {
 }
 
 .secondary_title {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .txt_container {
@@ -279,6 +279,11 @@ h5.author::before {
   background-color: #fff;
 }
 
+#navbar {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
 nav.navbar {
   position: fixed;
   top: 0;
@@ -287,7 +292,7 @@ nav.navbar {
 }
 
 nav.navbar .navbar-brand img {
-  width: 150px;
+  width: 100px;
 }
 
 .container.add10 {
@@ -339,6 +344,10 @@ nav.navbar .navbar-brand img {
   color: #fff;
 }
 
+#footer .container .logo-footer {
+  max-width: 150px;
+}
+
 #footer .container .images {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -348,7 +357,7 @@ nav.navbar .navbar-brand img {
 }
 
 #footer .container .images img {
-  width: 60px;
+  width: 40px;
   opacity: .6;
   -webkit-transition: all .3s;
   transition: all .3s;
